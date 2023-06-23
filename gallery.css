@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+  overflow-x: hidden;
+  background-image: linear-gradient(rgba(120, 125, 14, 0.6), rgba(125, 125, 14, 0.6));
+  margin: 0;
+  padding: 0;
+}
+/*
+body{
+  height: 100%;
+  width: 100%; 
+}
+*/
+.header{
+    min-height: 100vh;
+    width: 100%;
+    /* background-image: linear-gradient(rgba(125, 125, 14, 0.6), rgba(125, 125, 14, 0.8)); */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Source Code Pro;
+   /* border: 1px solid red; */
+}
+
+.teleporter{
+flex: 1;
+text-align: right;
+}
+
+.teleporter ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.teleporter ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.teleporter ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgba(255, 255 , 0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.teleporter ul li:hover::after{
+    width: 100%;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .naming-text h1{
+        font-size: 20px;
+    }
+    .teleporter ul li{
+        display: block;
+    }
+    .teleporter{
+        position: absolute;
+        background: #000000;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        height: 100%;
+
+    }
+  nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    teleporter ul{
+        padding: 30px;
+    }
+}
+
+
+/*Website for icons: https://fontawesome.com/v4/ */
+
+.footer{
+  background: #000000;
+  color: #d3d3d3;
+  height: 500px;
+  position: relative;
+ /* border: 1px solid red; */
+}
+.footer .footer-content{
+  /* border: 1px solid red;
+  height: 350px; */
+  display: flex;
+}
+.footer, .footer-content, .footer-section{
+  flex: 1;
+  padding: 25px;
+ /* border: 1px solid white; */
+}
+
+.footer h1{
+  font-size: 24px;
+  font-family: Roboto Slab;
+}
+
+.footer a{
+  font-size: 20px;
+  font-family: Roboto Slab;
+}
+
+.footer p{
+  font-size: 16px;
+  font-family: Roboto Slab;
+}
+
+.footer .footer-bottom{
+  background: #C4B454;
+  color: #686868;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+  }
+
+
+
+.footer h1{
+    text-align: left;
+    color: #fff;
+}
+.footer img{
+  height: 100%;
+  width: auto;
+}
+.logoflick{
+display: inline-block;
+  width: 50%;
+  }
+
+
+/*.swiper{
+  width: 80%;
+  height: fit-content;
+  left: 40px;
+}
+.swiper-slide img{
+  width: 100%;
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+ color: yellow;
+}
+.swiper, .swiper-pagnation-bullet-active{
+  background: #fff;
+}
+*/
+
+.img-gallery{
+  max-width: 80%;
+  height: 100%;
+  display: grid;
+/*grid-template-columns: repeat(auto-fit, minmas(50px, 1fr)); */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* border: 1px solid red; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px 18px 20px;
+}
+
+.img-gallery img{
+  border: 6px inset #FFFF66;
+  cursor: pointer;
+  height: 90%;
+  max-width: 90%;
+margin-left: auto;
+margin-right: auto;
+box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+
+.img-gallery img:hover{
+  transform: scale(0.9) rotate(-360deg);
+  border-radius: 10px;
+  box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}

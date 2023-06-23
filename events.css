@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+  max-width: 100%;
+    overflow-x: hidden;
+  
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(200, 200, 50, 0.9), rgba(222, 222, 11, 0.60));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Source Code Pro;
+}
+
+nav img{
+    width: 120px;
+}
+.teleporter{
+flex: 1;
+text-align: right;
+}
+
+.teleporter ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.teleporter ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.teleporter ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgba(255, 255 , 0);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.teleporter ul li:hover::after{
+    width: 100%;
+}
+.naming-text{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.naming-text h1{
+    font-size: 62px;
+    text-align: center;
+}
+.naming-text h3{
+    margin: 10px 0 40px;
+    color: #fff;
+    text-align: center;
+}
+
+
+.donation{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: black;
+    position: relative;
+    cursor: pointer;
+    margin-left: 40%;
+    margin-right: 40%;
+        font-family: Source Code Pro;
+    text-align: center
+    
+}
+.donation:hover{
+    border: 1px solid #cccc00;
+    background: #cccc00;
+    transition: 1s;
+}
+
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+    .naming-text h1{
+        font-size: 20px;
+    }
+    .teleporter ul li{
+        display: block;
+    }
+    .teleporter{
+        position: absolute;
+        background: #000000;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        height: 100%;
+
+    }
+  nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    teleporter ul{
+        padding: 30px;
+    }
+}
+
+
+/*Website for icons: https://fontawesome.com/v4/ */
+
+.footer{
+  background: #000000;
+  color: #d3d3d3;
+  height: 500px;
+  position: relative;
+
+}
+.footer .footer-content{
+  /* border: 1px solid red;
+  height: 350px; */
+  display: flex;
+}
+.footer, .footer-content, .footer-section{
+  flex: 1;
+  padding: 25px;
+ /* border: 1px solid white; */
+}
+
+.footer h1{
+  font-size: 24px;
+  font-family: Roboto Slab;
+}
+
+.footer a{
+  font-size: 20px;
+  font-family: Roboto Slab;
+}
+
+.footer p{
+  font-size: 16px;
+  font-family: Roboto Slab;
+}
+
+.footer .footer-bottom{
+  background: #C4B454;
+  color: #686868;
+  height: 50px;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+  }
+
+
+
+.footer h1{
+    text-align: left;
+    color: #fff;
+}
+.footer img{
+  height: 100%;
+  width: auto;
+}
+.logoflick{
+display: inline-block;
+  width: 50%;
+   }
+
+
+
+
+
+.events-event h1{
+  font-size: 24px;
+  font-family: Roboto Slab;
+}
+
+.events-windsor, .events-southington, .events-ctstate, .events-vazzys, .events-worlds h3{
+font-size: 18px;
+  font-family: Roboto Slab;
+}
+
+
+ .events-event, .events-windsor, .events-southington, .events-ctstate, .events-vazzys, .events-worlds {
+  border: 1px round black;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1px;
+  margin-bottom: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 20px;
+  background: #fff;
+  line-height: 18px;
+  /* height: 18px; */
+}
+
+
+.date{
+  text-align: right;
+}
+
+.south-table /*, .south-row1, .south-row2, .south-row3, .south-row4, .south-row5 */{
+  text-align: center;
+  border: 1px solid rgba(125,125,14,0.8);
+}
+
+.redback{
+background: rgba(255,0, 0, 0.6);
+}
+.blueback{
+ background: rgba(0, 0, 255, 0.6);
+}
+
+.green-text{
+  color: #006406;
+}
